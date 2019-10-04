@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class blog(models.Model):
+class Blog(models.Model):
     """Create a blog entry."""
 
     title = models.CharField(max_length=100)
