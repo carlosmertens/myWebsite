@@ -21,3 +21,8 @@ Then copy and paste in your browser the http provided by the terminal.
 ### Author
 
 - **Carlos Mertens** - _Certificate Python/Machine Learning Engineer_
+
+### Acknowledgment
+
+- _**Nick Walter - Django & Python Instructor**_
+- _**Background Photo by Kevin Bhagat on Unsplash**_
