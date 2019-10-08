@@ -123,14 +123,14 @@
 
         <div class="container bg-secondary text-left text-white">
           <br />
-          <h3>Latest Posts</h3>
+          <h2>Latest Posts</h2>
 
           {% for post in posts.all %}
           <hr style="border-top: 1px solid whitesmoke;" />
           <a class="text-white" href=""
-            ><h4>{{ post.title }}</h4></a
+            ><h3>{{ post.title }}</h3></a
           >
-          <p>Posted on: {{ post.date }}</p>
+          <p>Posted on: {{ post.date_view }}</p>
           <img
             class="img-fluid img-thumbnail"
             src="{{ post.image.url }}"
