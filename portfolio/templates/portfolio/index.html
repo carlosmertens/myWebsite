@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  {% load staticfiles %}
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -99,6 +100,13 @@
     <main role="main">
       <section class="jumbotron text-center">
         <div class="container">
+          <img
+            class="rounded-circle mb-5"
+            src="{% static 'winter_me.jpg' %}"
+            alt="Me Photo"
+            height="150"
+            width="150"
+          />
           <h1 class="jumbotron-heading text-success">
             Hello there, I'm Carlos!
           </h1>
