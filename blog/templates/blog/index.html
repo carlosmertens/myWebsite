@@ -79,7 +79,10 @@
       </div>
       <div class="navbar navbar-dark bg-secondary shadow-lg">
         <div class="container d-flex justify-content-between">
-          <a href="#" class="navbar-brand d-flex align-items-center text-dark">
+          <a
+            href="{% url 'index' %}"
+            class="navbar-brand d-flex align-items-center text-dark"
+          >
             <strong>CARLOS MERTENS</strong>
           </a>
           <button
@@ -111,7 +114,7 @@
           </p>
           <hr class="my-4" />
           <p>
-            <a href="#" class="btn btn-success my-2">Home</a>
+            <a href="{% url 'index' %}" class="btn btn-success my-2">Home</a>
             <a
               href="mailto:mertenscarlos@yahoo.com"
               class="btn btn-secondary my-2"
