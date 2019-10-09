@@ -26,3 +26,7 @@ Then copy and paste in your browser the http provided by the terminal.
 
 - _**Nick Walter - Django & Python Instructor**_
 - _**Background Photo by Kevin Bhagat on Unsplash**_
+- _**Brown Mosquito Photo by Егор Камелев on Unsplash**_
+- _**Spaghetti Photo by OLA Mishchenko on Unsplash**_
+- _**Doggies Photo by Matt Nelson on Unsplash**_
+- _**My Website Photo by Danielle MacInnes on Unsplash**_
