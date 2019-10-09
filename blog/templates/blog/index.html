@@ -121,13 +121,13 @@
 
         <br />
 
-        <div class="container bg-secondary text-left text-white">
+        <div class="container bg-secondary text-left text-dark">
           <br />
           <h2>Latest Posts</h2>
 
           {% for post in posts.all %}
-          <hr style="border-top: 1px solid whitesmoke;" />
-          <a class="text-white" href=""
+          <hr style="border-top: 1px solid rgb(20, 240, 75);" />
+          <a class="text-dark" href=""
             ><h3>{{ post.title }}</h3></a
           >
           <p>Posted on: {{ post.date_view }}</p>
