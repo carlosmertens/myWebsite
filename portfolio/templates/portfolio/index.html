@@ -20,6 +20,8 @@
       crossorigin="anonymous"
     />
 
+    <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -38,13 +40,13 @@
     </style>
   </head>
   <body>
-    <header>
-      <div class="collapse bg-success shadow-lg" id="navbarHeader">
+    <header class="fixed-top">
+      <div class="collapse bg-secondary shadow-lg" id="navbarHeader">
         <div class="container">
           <div class="row">
             <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">About Me!</h4>
-              <p class="text-white">
+              <h4 class="text-dark">About Me!</h4>
+              <p class="text-dark">
                 I'm Certified in IT & Computing by The Open University and in
                 Machine Learning with Udacity. I also have a nanodegree in AI
                 (Artificial Intelligence) Programming with Python. Currently I
@@ -57,33 +59,40 @@
             <div class="col-sm-4 offset-md-1 py-4">
               <ul class="list-unstyled">
                 <li>
-                  <a
+                  <h6><a
                     href="https://www.linkedin.com/in/carlosmertens/"
                     target="_blank"
-                    class="text-white"
-                    >LinkedIn</a
-                  >
+                    class="text-dark"
+                    ><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a
+                  ></h6>
                 </li>
                 <li>
-                  <a
+                  <h6><a
                     href="https://github.com/carlosmertens"
                     target="_blank"
-                    class="text-white"
-                    >GitHub</a
-                  >
+                    class="text-dark"
+                    ><ion-icon name="logo-github"></ion-icon> GitHub</a
+                  ></h6>
+                  <li>
+                    <h6><a
+                    href="mailto:mertenscarlos@yahoo.com"
+                    class="text-dark"
+                    ><ion-icon name="mail"></ion-icon> Email</a
+                    ></h6>
+                  </li>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <div class="navbar navbar-dark bg-secondary shadow-lg">
+      <div class="navbar navbar-dark bg-success shadow-lg">
         <div class="container d-flex justify-content-between">
           <a
             href="{% url 'index' %}"
             class="navbar-brand d-flex align-items-center text-dark"
           >
-            <strong>CARLOS MERTENS</strong>
+            <strong><ion-icon name="log-in"></ion-icon> CARLOS MERTENS</strong>
           </a>
           <button
             class="navbar-toggler bg-dark"
@@ -94,13 +103,13 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span>Profile</span>
+            <span class="navbar-toggler-icon"></span>
           </button>
         </div>
       </div>
     </header>
 
-    <main role="main">
+    <main role="main" class="pt-5">
       <section class="jumbotron text-center">
         <div class="container">
           <img
@@ -119,12 +128,7 @@
           </p>
           <hr class="my-4" />
           <p>
-            <a href="{% url 'allBlogs' %}" class="btn btn-success my-2">Blog</a>
-            <a
-              href="mailto:mertenscarlos@yahoo.com"
-              class="btn btn-secondary my-2"
-              >Email</a
-            >
+            <a href="{% url 'allBlogs' %}" class="btn btn-success my-2">Go to my Blog</a>
           </p>
         </div>
 
@@ -173,15 +177,12 @@
       </section>
     </main>
 
-    <footer class="text-success mt-2">
-      <div class="container">
-        <p class="float-right">
-          <a href="#" class="text-success">Back to top</a>
-        </p>
-        <p>
+    <footer class="text-dark mt-2 bg-success fixed-bottom">
+      <div class="container pt-3">
+        <p class="float-left">
           Everybody smiles in the same language!
         </p>
-        <p>
+        <p class="float-right">
           © Carlos Mertens {% now "Y" %}
         </p>
       </div>
@@ -202,5 +203,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>

@@ -38,67 +38,74 @@
     </style>
   </head>
   <body>
-    <header>
-      <div class="collapse bg-success shadow-lg" id="navbarHeader">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">About Me!</h4>
-              <p class="text-white">
-                I'm Certified in IT & Computing by The Open University and in
-                Machine Learning with Udacity. I also have a nanodegree in AI
-                (Artificial Intelligence) Programming with Python. Currently I
-                am taking an online bootcamp for Django Full Stack Developer
-                certificate. I have a demonstrated history of working in the
-                internet industry and I am skilled in Customer Satisfaction,
-                Time Management, Problem Solving, and Teamwork.
-              </p>
-            </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-              <ul class="list-unstyled">
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/carlosmertens/"
-                    target="_blank"
-                    class="text-white"
-                    >LinkedIn</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/carlosmertens"
-                    target="_blank"
-                    class="text-white"
-                    >GitHub</a
-                  >
-                </li>
-              </ul>
+      <header class="fixed-top">
+          <div class="collapse bg-secondary shadow-lg" id="navbarHeader">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                  <h4 class="text-dark">About Me!</h4>
+                  <p class="text-dark">
+                    I'm Certified in IT & Computing by The Open University and in
+                    Machine Learning with Udacity. I also have a nanodegree in AI
+                    (Artificial Intelligence) Programming with Python. Currently I
+                    am taking an online bootcamp for Django Full Stack Developer
+                    certificate. I have a demonstrated history of working in the
+                    internet industry and I am skilled in Customer Satisfaction,
+                    Time Management, Problem Solving, and Teamwork.
+                  </p>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                  <ul class="list-unstyled">
+                    <li>
+                      <h6><a
+                        href="https://www.linkedin.com/in/carlosmertens/"
+                        target="_blank"
+                        class="text-dark"
+                        ><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a
+                      ></h6>
+                    </li>
+                    <li>
+                      <h6><a
+                        href="https://github.com/carlosmertens"
+                        target="_blank"
+                        class="text-dark"
+                        ><ion-icon name="logo-github"></ion-icon> GitHub</a
+                      ></h6>
+                      <li>
+                        <h6><a
+                        href="mailto:mertenscarlos@yahoo.com"
+                        class="text-dark"
+                        ><ion-icon name="mail"></ion-icon> Email</a
+                        ></h6>
+                      </li>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="navbar navbar-dark bg-secondary shadow-lg">
-        <div class="container d-flex justify-content-between">
-          <a
-            href="{% url 'index' %}"
-            class="navbar-brand d-flex align-items-center text-dark"
-          >
-            <strong>CARLOS MERTENS</strong>
-          </a>
-          <button
-            class="navbar-toggler bg-dark"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarHeader"
-            aria-controls="navbarHeader"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span>Profile</span>
-          </button>
-        </div>
-      </div>
-    </header>
+          <div class="navbar navbar-dark bg-success shadow-lg">
+            <div class="container d-flex justify-content-between">
+              <a
+                href="{% url 'index' %}"
+                class="navbar-brand d-flex align-items-center text-dark"
+              >
+                <strong><ion-icon name="log-in"></ion-icon> CARLOS MERTENS</strong>
+              </a>
+              <button
+                class="navbar-toggler bg-dark"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarHeader"
+                aria-controls="navbarHeader"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </div>
+        </header>
 
     <main role="main">
       <section class="jumbotron text-center">
@@ -114,12 +121,7 @@
           </p>
           <hr class="my-4" />
           <p>
-            <a href="{% url 'index' %}" class="btn btn-success my-2">Home</a>
-            <a
-              href="mailto:mertenscarlos@yahoo.com"
-              class="btn btn-secondary my-2"
-              >Email</a
-            >
+            <a href="{% url 'index' %}" class="btn btn-success my-2">Back Home</a>
           </p>
         </div>
 
@@ -151,15 +153,12 @@
       </section>
     </main>
 
-    <footer class="text-success mt-2">
-      <div class="container">
-        <p class="float-right">
-          <a href="#" class="text-success">Back to top</a>
-        </p>
-        <p>
+    <footer class="text-dark mt-2 bg-success fixed-bottom">
+      <div class="container pt-3">
+        <p class="float-left">
           Everybody smiles in the same language!
         </p>
-        <p>
+        <p class="float-right">
           © Carlos Mertens {% now "Y" %}
         </p>
       </div>
@@ -180,5 +179,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>
