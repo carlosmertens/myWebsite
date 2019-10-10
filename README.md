@@ -8,9 +8,9 @@ This project is to create my own website to showcase some of my most important p
 
 ### Run
 
-Environment can be installed from `environment.yml` file.
+Environment can be installed from `requirenments.txt` file.
 
-In a terminal or command line window, navigate to the top-level project directory `wordsCount` (that contains this README and run one of the following:
+In a terminal or command line window, navigate to the top-level project directory `myWebsite` (that contains this README and run one of the following:
 
 ```
 python manage.py runserver
