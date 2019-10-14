@@ -1,14 +1,18 @@
 # Project: My Personal Website
 
-### Portfolio - Blog
+## Portfolio - Blog
 
 ### Description
 
-This project is to create my own website to showcase some of my most important projects. It features aslso a blog page to provide feedback on the courses I have taken, my projects and others.
+This project is to create my own website to showcase some of my most important projects. It features also a blog page to provide feedback on the courses I have taken, my projects and others.
+
+It was created from the scratch using Django back-end, and just HTML/Bootstrap for the from end.
+
+The projected was deployed through Digital Ocean, Nginx and Gunicorn using Linux Server
 
 ### Run
 
-Environment can be installed from `requirenments.txt` file.
+Dependencies for the environment can be installed from `requirements.txt` file.
 
 In a terminal or command line window, navigate to the top-level project directory `myWebsite` (that contains this README and run one of the following:
 
