@@ -72,11 +72,20 @@
       </div>
       <div class="navbar navbar-dark bg-primary shadow-lg">
         <div class="container d-flex justify-content-between">
-          <a
+          <!-- <a
             href="{% url 'index' %}"
             class="navbar-brand d-flex align-items-center text-dark"
           >
             <strong><ion-icon name="log-in"></ion-icon> CARLOS MERTENS</strong>
+          </a> -->
+          <a class="navbar-brand" href="{% url 'index' %}">
+            <img
+              class="d-inline-block align-top pr-1"
+              src="{% static 'logoM.png' %}"
+              alt="Logo"
+              height="35"
+              width="35"
+            /><strong>Carlos Mertens</strong>
           </a>
           <button
             class="navbar-toggler bg-dark"
