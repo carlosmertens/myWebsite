@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% load staticfiles %}
+  {% extends 'base.html' %} {% load staticfiles %}
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -20,7 +20,10 @@
       crossorigin="anonymous"
     />
 
-    <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link
+      href="/open-iconic/font/css/open-iconic-bootstrap.css"
+      rel="stylesheet"
+    />
 
     <style>
       .bd-placeholder-img {
@@ -40,7 +43,7 @@
     </style>
   </head>
   <body>
-    <header class="fixed-top">
+    <!-- <header class="fixed-top">
       <div class="collapse bg-secondary shadow-lg" id="navbarHeader">
         <div class="container">
           <div class="row">
@@ -107,8 +110,8 @@
           </button>
         </div>
       </div>
-    </header>
-
+    </header> -->
+    {% block content %}
     <main role="main" class="pt-5">
       <section class="jumbotron text-center">
         <div class="container">
@@ -128,7 +131,9 @@
           </p>
           <hr class="my-4" />
           <p>
-            <a href="{% url 'allBlogs' %}" class="btn btn-success my-2">Go to my Blog</a>
+            <a href="{% url 'allBlogs' %}" class="btn btn-success my-2"
+              >Go to my Blog</a
+            >
           </p>
         </div>
 
@@ -175,20 +180,13 @@
           </div>
         </div>
 
-        <p class="lead text-muted pt-5">Everybody smiles in the same language!</p>
+        <p class="lead text-muted pt-5">
+          Everybody smiles in the same language!
+        </p>
       </section>
     </main>
 
-    <footer class="text-dark bg-success fixed-bottom pt-2">
-      <div class="container pt-1">
-        <!-- <p class="float-left">
-          Everybody smiles in the same language!
-        </p> -->
-        <p class="text-center">
-          © {% now "Y" %} by Carlos Mertens. All rights reserved.
-        </p>
-      </div>
-    </footer>
+    {% endblock %}
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

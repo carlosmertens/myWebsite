@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load staticfiles %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Homepage</title>
+    <!-- Bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="/open-iconic/font/css/open-iconic-bootstrap.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="fixed-top">
+      <div class="collapse bg-secondary shadow-lg" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About Me!</h4>
+              <p class="text-white">
+                I'm Certified in IT & Computing by The Open University and in
+                Machine Learning with Udacity. I also have a nanodegree in AI
+                (Artificial Intelligence) Programming with Python. Currently I
+                am taking an online bootcamp for Django Full Stack Developer
+                certificate. I have a demonstrated history of working in the
+                internet industry and I am skilled in Customer Satisfaction,
+                Time Management, Problem Solving, and Teamwork.
+              </p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <ul class="list-unstyled">
+                <li>
+                  <h6>
+                    <a
+                      href="https://www.linkedin.com/in/carlosmertens/"
+                      target="_blank"
+                      class="text-white"
+                      ><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a
+                    >
+                  </h6>
+                </li>
+                <li>
+                  <h6>
+                    <a
+                      href="https://github.com/carlosmertens"
+                      target="_blank"
+                      class="text-white"
+                      ><ion-icon name="logo-github"></ion-icon> GitHub</a
+                    >
+                  </h6>
+                </li>
+                <li>
+                  <h6>
+                    <a href="mailto:mertenscarlos@yahoo.com" class="text-white"
+                      ><ion-icon name="mail"></ion-icon> Email</a
+                    >
+                  </h6>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-success shadow-lg">
+        <div class="container d-flex justify-content-between">
+          <a
+            href="{% url 'index' %}"
+            class="navbar-brand d-flex align-items-center text-dark"
+          >
+            <strong><ion-icon name="log-in"></ion-icon> CARLOS MERTENS</strong>
+          </a>
+          <button
+            class="navbar-toggler bg-dark"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main role="main" class="p-3">
+      {% block content %} {% endblock %}
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-muted pt-2" style="background-color:palegreen">
+      <div class="container text-center p-1">
+        <p>© {% now "Y" %} by Carlos Mertens. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap scrip links -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script to load icons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  </body>
+</html>
