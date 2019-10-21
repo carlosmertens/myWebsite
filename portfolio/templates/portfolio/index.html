@@ -43,77 +43,9 @@
     </style>
   </head>
   <body>
-    <!-- <header class="fixed-top">
-      <div class="collapse bg-secondary shadow-lg" id="navbarHeader">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">About Me!</h4>
-              <p class="text-white">
-                I'm Certified in IT & Computing by The Open University and in
-                Machine Learning with Udacity. I also have a nanodegree in AI
-                (Artificial Intelligence) Programming with Python. Currently I
-                am taking an online bootcamp for Django Full Stack Developer
-                certificate. I have a demonstrated history of working in the
-                internet industry and I am skilled in Customer Satisfaction,
-                Time Management, Problem Solving, and Teamwork.
-              </p>
-            </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-              <ul class="list-unstyled">
-                <li>
-                  <h6><a
-                    href="https://www.linkedin.com/in/carlosmertens/"
-                    target="_blank"
-                    class="text-white"
-                    ><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a
-                  ></h6>
-                </li>
-                <li>
-                  <h6><a
-                    href="https://github.com/carlosmertens"
-                    target="_blank"
-                    class="text-white"
-                    ><ion-icon name="logo-github"></ion-icon> GitHub</a
-                  ></h6>
-                  <li>
-                    <h6><a
-                    href="mailto:mertenscarlos@yahoo.com"
-                    class="text-white"
-                    ><ion-icon name="mail"></ion-icon> Email</a
-                    ></h6>
-                  </li>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="navbar navbar-dark bg-success shadow-lg">
-        <div class="container d-flex justify-content-between">
-          <a
-            href="{% url 'index' %}"
-            class="navbar-brand d-flex align-items-center text-dark"
-          >
-            <strong><ion-icon name="log-in"></ion-icon> CARLOS MERTENS</strong>
-          </a>
-          <button
-            class="navbar-toggler bg-dark"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarHeader"
-            aria-controls="navbarHeader"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </div>
-    </header> -->
     {% block content %}
-    <main role="main" class="pt-5">
-      <section class="jumbotron text-center">
+    <main role="main" class="pt-3">
+      <section class="jumbotron text-center bg-light">
         <div class="container">
           <img
             class="rounded-circle mb-5"
@@ -122,7 +54,7 @@
             height="150"
             width="150"
           />
-          <h1 class="jumbotron-heading text-success">
+          <h1 class="jumbotron-heading text-primary">
             Hello there, I'm Carlos!
           </h1>
           <p class="lead text-muted">
@@ -131,7 +63,7 @@
           </p>
           <hr class="my-4" />
           <p>
-            <a href="{% url 'allBlogs' %}" class="btn btn-success my-2"
+            <a href="{% url 'allBlogs' %}" class="btn btn-primary my-2"
               >Go to my Blog</a
             >
           </p>
@@ -167,7 +99,7 @@
                     >
                       <a
                         href="{{ project.gitHub }}"
-                        class="btn btn-outline-success my-2"
+                        class="btn btn-outline-primary my-2"
                         target="_blank"
                         >GitHub</a
                       >

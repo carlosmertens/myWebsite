@@ -41,9 +41,9 @@
     {% block content %}
 
     <main role="main" class="pt-5">
-      <section class="jumbotron text-center">
+      <section class="jumbotron text-center bg-light">
         <div class="container">
-          <h1 class="jumbotron-heading text-success">
+          <h1 class="jumbotron-heading text-primary">
             Welcome to my blog page!!
           </h1>
           <p class="lead text-muted">
@@ -54,7 +54,7 @@
           </p>
           <hr class="my-4" />
           <p>
-            <a href="{% url 'index' %}" class="btn btn-success my-2"
+            <a href="{% url 'index' %}" class="btn btn-primary my-2"
               >Back Home</a
             >
           </p>
@@ -67,7 +67,7 @@
           <h2>Latest Posts</h2>
 
           {% for post in posts.all %}
-          <hr style="border-top: 1px solid rgb(20, 240, 75);" />
+          <hr style="border-top: 1px solid rgb(6, 41, 241);" />
           <a class="text-dark" href="{% url 'theBlog' post.id %}"
             ><h3>{{ post.title }}</h3></a
           >

@@ -40,9 +40,9 @@
   <body>
     {% block content %}
     <main role="main" class="pt-5">
-      <section class="jumbotron text-center">
+      <section class="jumbotron text-center bg-light">
         <div class="container">
-          <h1 class="jumbotron-heading text-success">
+          <h1 class="jumbotron-heading text-primary">
             {{ theblog.title }}
           </h1>
           <p>{{ theblog.date }}</p>
@@ -56,7 +56,7 @@
           <p class="lead text-muted mt-4">{{ theblog.summary }}</p>
           <hr class="my-4" />
           <p>
-            <a href="{% url 'allBlogs' %}" class="btn btn-success my-2"
+            <a href="{% url 'allBlogs' %}" class="btn btn-primary my-2"
               >Back to Blogs</a
             >
           </p>
