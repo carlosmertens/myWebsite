@@ -5,6 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Make Python applications with Djando - Dedicated Python Developer"
+    />
     <title>Homepage</title>
     <!-- Bootstrap link -->
     <link
@@ -24,48 +28,12 @@
       <div class="collapse bg-secondary shadow-lg" id="navbarHeader">
         <div class="container">
           <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
+            <div class="container">
               <h4 class="text-white">About Me!</h4>
               <p class="text-white">
-                I'm Certified in IT & Computing by The Open University and in
-                Machine Learning with Udacity. I also have a nanodegree in AI
-                (Artificial Intelligence) Programming with Python. Currently I
-                am taking an online bootcamp for Django Full Stack Developer
-                certificate. I have a demonstrated history of working in the
-                internet industry and I am skilled in Customer Satisfaction,
-                Time Management, Problem Solving, and Teamwork.
+                  I'm Certified in IT & Computing by The Open University and in Machine Learning by Udacity. I also have a nanodegree in AI (Artificial Intelligence) Programming with Python plus a Django Full Stack Web Development certificate. I have a demonstrated history of working in the internet industry and I am skilled in Customer Satisfaction, Time Management, Problem Solving, and Teamwork.
               </p>
             </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-              <ul class="list-unstyled">
-                <li>
-                  <h6>
-                    <a
-                      href="https://www.linkedin.com/in/carlosmertens/"
-                      target="_blank"
-                      class="text-white"
-                      ><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a
-                    >
-                  </h6>
-                </li>
-                <li>
-                  <h6>
-                    <a
-                      href="https://github.com/carlosmertens"
-                      target="_blank"
-                      class="text-white"
-                      ><ion-icon name="logo-github"></ion-icon> GitHub</a
-                    >
-                  </h6>
-                </li>
-                <li>
-                  <h6>
-                    <a href="mailto:mertenscarlos@yahoo.com" class="text-white"
-                      ><ion-icon name="mail"></ion-icon> Email</a
-                    >
-                  </h6>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -108,19 +76,66 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="text-muted pb-2" style="background-color: #e3f2fd;">
-      <div class="container text-center pt-2">
-        <p>© {% now "Y" %} by Carlos Mertens. All rights reserved.</p>
-      </div>
+    <footer style="background-color: #e3f2fd;">
       <div class="container">
-        Icons made by
-        <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
-          >Freepik</a
-        >
-        from
-        <a href="https://www.flaticon.com/" title="Flaticon"
-          >www.flaticon.com</a
-        >
+        <div class="row">
+          <div class="col-6">
+            <div class="pt-3">
+              <h6>Credits:</h6>
+              <p>
+                Icons made by Freepik from
+                <a
+                  href="https://www.flaticon.com/"
+                  title="Flaticon"
+                  target="_blank"
+                  >www.flaticon.com</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class=" pt-3 float-right">
+              <a
+                href="https://www.linkedin.com/in/carlosmertens/"
+                target="_blank"
+                class="p-2"
+                ><img
+                  src="{% static 'linkedin.png' %}"
+                  alt="LinkedIn"
+                  height="40"
+                  width="40"
+              /></a>
+
+              <a
+                href="https://github.com/carlosmertens"
+                target="_blank"
+                class="p-2"
+                ><img
+                  src="{% static 'github-logo.png' %}"
+                  alt="GitHub"
+                  height="40"
+                  width="40"
+              /></a>
+
+              <a href="mailto:mertenscarlos@yahoo.com" class="p-2"
+                ><img
+                  src="{% static 'yahoo.png' %}"
+                  alt="Email"
+                  height="40"
+                  width="40"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-primary pb-2">
+        <div class="container text-center text-white">
+          <p class="pt-2">
+            Copyright © {% now "Y" %} by Mertens Applications. <br />
+            All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
 
