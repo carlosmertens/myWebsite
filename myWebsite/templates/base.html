@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% load staticfiles %}
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta
       name="description"
-      content="Make Python applications with Djando - Dedicated Python Developer"
+      content="Python applications with Djando - Dedicated Python Developer"
     />
-    <title>Homepage</title>
+    <title>{{ theblog.title }} | Carlos Mertens</title>
     <!-- Bootstrap link -->
     <link
       rel="stylesheet"
@@ -22,6 +21,7 @@
       rel="stylesheet"
     />
   </head>
+  {% load staticfiles %}
   <body>
     <!-- HEADER -->
     <header class="fixed-top">
@@ -31,7 +31,11 @@
             <div class="container">
               <h4 class="text-white">About Me!</h4>
               <p class="text-white">
-                  I'm Certified in IT & Computing by The Open University and in Machine Learning by Udacity. I also have a nanodegree in AI (Artificial Intelligence) Programming with Python plus a Django Full Stack Web Development certificate. I have a demonstrated history of working in the internet industry and I am skilled in Customer Satisfaction, Time Management, Problem Solving, and Teamwork.
+                  I'm Certified in IT & Computing by The Open University and in Machine Learning by Udacity.
+                  I also have a nanodegree in AI (Artificial Intelligence) Programming with Python plus a
+                  Django Full Stack Web Development certificate. I have a demonstrated history of working
+                  in the internet industry and I am skilled in Customer Satisfaction, Time Management,
+                  Problem Solving, and Teamwork.
               </p>
             </div>
             </div>
@@ -40,12 +44,6 @@
       </div>
       <div class="navbar navbar-dark bg-primary shadow-lg">
         <div class="container d-flex justify-content-between">
-          <!-- <a
-            href="{% url 'index' %}"
-            class="navbar-brand d-flex align-items-center text-dark"
-          >
-            <strong><ion-icon name="log-in"></ion-icon> CARLOS MERTENS</strong>
-          </a> -->
           <a class="navbar-brand" href="{% url 'index' %}">
             <img
               class="d-inline-block align-top pr-1"
