@@ -62,6 +62,11 @@
           <br />
           <br />
           <p class="lead">{{ post.summary_view }}...</p>
+          <p>
+            <a class="text-white" href="{% url 'theBlog' post.id %}"
+              ><em>Read more </em></a
+            >
+          </p>
           <br />
           {% endfor %}
         </div>
