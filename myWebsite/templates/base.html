@@ -28,7 +28,9 @@
     />
   </head>
   {% load staticfiles %}
-  <body style="font-family: 'Lato', sans-serif;">
+  <body
+    style="font-family: 'Lato', sans-serif; background-color: cornflowerblue;"
+  >
     <!-- HEADER -->
     <header class="fixed-top">
       <div class="collapse bg-secondary shadow-lg" id="navbarHeader">
@@ -76,7 +78,7 @@
     </header>
 
     <!-- MAIN -->
-    <main role="main" class="p-3 bg-light">
+    <main role="main" class="p-3" style="background-color:lightgrey;">
       {% block content %} {% endblock %}
     </main>
 

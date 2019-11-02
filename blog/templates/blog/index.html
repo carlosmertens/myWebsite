@@ -21,7 +21,10 @@
     {% block content %}
 
     <main role="main" class="pt-5">
-      <section class="jumbotron text-center bg-light">
+      <section
+        class="jumbotron text-center"
+        style="background-color:lightgrey;"
+      >
         <div class="container">
           <h1 class="jumbotron-heading text-primary">
             Welcome to my blog page!!
@@ -42,7 +45,7 @@
 
         <br />
 
-        <div class="container bg-secondary text-left text-dark">
+        <div class="container text-left text-dark">
           <br />
           <h2>Latest Posts</h2>
 
@@ -63,9 +66,7 @@
           <br />
           <p class="lead">{{ post.summary_view }}...</p>
           <p>
-            <a class="text-white" href="{% url 'theBlog' post.id %}"
-              ><em>Read more </em></a
-            >
+            <a href="{% url 'theBlog' post.id %}"><em>Read more </em></a>
           </p>
           <br />
           {% endfor %}
