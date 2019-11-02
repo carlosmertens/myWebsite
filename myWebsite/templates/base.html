@@ -32,49 +32,60 @@
     style="font-family: 'Lato', sans-serif; background-color: cornflowerblue;"
   >
     <!-- HEADER -->
-    <header class="fixed-top">
-      <div class="collapse bg-secondary shadow-lg" id="navbarHeader">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-          <div class="row">
-            <div class="container">
-              <h4 class="text-white">About Me!</h4>
-              <p class="text-white">
-                I'm Certified in IT & Computing by The Open University and in
-                Machine Learning by Udacity. I also have a nanodegree in AI
-                (Artificial Intelligence) Programming with Python plus a Django
-                Full Stack Web Development certificate. I have a demonstrated
-                history of working in the internet industry and I am skilled in
-                Customer Satisfaction, Time Management, Problem Solving, and
-                Teamwork.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="navbar navbar-dark bg-primary shadow-lg">
-        <div class="container d-flex justify-content-between">
           <a class="navbar-brand" href="{% url 'index' %}">
             <img
-              class="d-inline-block align-top pr-1"
+              class="d-inline-block align-top"
               src="{% static 'logoM.png' %}"
               alt="Logo"
-              height="35"
-              width="35"
-            /><strong>Carlos Mertens</strong>
+              height="40"
+              width="40"
+            /><span class="pl-3"><strong>Carlos Mertens</strong></span>
           </a>
           <button
-            class="navbar-toggler bg-secondary"
+            class="navbar-toggler"
             type="button"
             data-toggle="collapse"
-            data-target="#navbarHeader"
-            aria-controls="navbarHeader"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <!-- {% if user.is_authenticated %}
+              <a class="nav-item nav-link text-light mt-1" href="{% url 'create' %}"
+                ><h2><ion-icon name="add-circle-outline"></ion-icon></h6
+              ></a>
+              <a
+                class="nav-item nav-link text-light mt-2"
+                href="javascript:{document.getElementById('logout').submit()}"
+                onclick=""
+                >Logout</a
+              >
+              <form id="logout" action="{% url 'logout' %}" method="POST">
+                {% csrf_token %}
+                <input type="hidden" />
+              </form>
+              {% else %} -->
+              <a class="nav-item nav-link text-light" href="{% url 'index' %}"
+                >Home</a
+              >
+              <a
+                class="nav-item nav-link text-light"
+                href="{% url 'allBlogs' %}"
+                >Blog</a
+              >
+              <a class="nav-item nav-link text-light" href="#">About</a>
+              <!-- {% endif %} -->
+            </div>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
 
     <!-- MAIN -->
