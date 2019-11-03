@@ -70,25 +70,21 @@
                 <input type="hidden" />
               </form>
               {% else %} -->
-              <a
-                class="nav-item nav-link text-light"
-                href="{% url 'homepage' %}"
-                >Home</a
-              >
-              <a
-                class="nav-item nav-link text-light"
-                href="{% url 'allBlogs' %}"
-                >Blog</a
+
+              <a class="nav-item nav-link text-light" href="{% url 'about' %}"
+                >About</a
               >
               <a
                 class="nav-item nav-link text-light"
                 href="{% url 'portfolio' %}"
                 >Projects</a
               >
-
-              <a class="nav-item nav-link text-light" href="{% url 'about' %}"
-                >About</a
+              <a
+                class="nav-item nav-link text-light"
+                href="{% url 'allBlogs' %}"
+                >Blog</a
               >
+
               <!-- {% endif %} -->
             </div>
           </div>
