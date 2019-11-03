@@ -19,12 +19,19 @@
   {% extends 'base.html' %} {% load staticfiles %}
   <body>
     {% block content %}
-    <main role="main" class="pt-5">
+    <main role="main" class="pt-3">
       <section
         class="jumbotron text-center"
         style="background-color:lightgrey;"
       >
         <div class="container">
+          <img
+            class="rounded-circle mb-5"
+            src="{% static 'winter_me.jpg' %}"
+            alt="Me Photo"
+            height="150"
+            width="150"
+          />
           <h1 class="text-primary">
             About Me!
           </h1>
@@ -49,14 +56,14 @@
             Principles, Python, NumPy and Pandas, Git and Command Line (Linux),
             Machine Learning Algorithms and Statistical Data Analysis, basic
             front-end technologies and Django back-end support. I have also
-            deploy my own website with Digital Ocean and in the process having
+            deployed my own website with Digital Ocean and in the process having
             first hand experience with setting up a Linux server, Postgres,
             Nginx and Gunicorn.
           </p>
           <hr class="my-4" />
           <h1 class="text-primary">Connect with me!</h1>
           <br />
-          <div class=" p-3">
+          <div class="row d-flex justify-content-center">
             <a
               href="https://www.linkedin.com/in/carlosmertens/"
               target="_blank"
@@ -67,7 +74,9 @@
                 height="100"
                 width="100"
             /></a>
+          </div>
 
+          <div class="row d-flex justify-content-center">
             <a
               href="https://github.com/carlosmertens"
               target="_blank"
@@ -78,7 +87,9 @@
                 height="100"
                 width="100"
             /></a>
+          </div>
 
+          <div class="row d-flex justify-content-center">
             <a href="mailto:mertenscarlos@yahoo.com" class="p-4"
               ><img
                 src="{% static 'yahoo.png' %}"
