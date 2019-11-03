@@ -35,39 +35,54 @@
           </h1>
           <p class="lead text-muted">
             Welcome to my website! I am glad you found me and I hope you like my
-            work.
+            work. Note that my work here may look a little silly but I just want
+            to express that coding is fun. May coding help you find the
+            silliness in you!
           </p>
           <hr class="my-4" />
-          <div class="row d-flex justify-content-center">
-            <a href="{% url 'about' %}" class="p-4"
-              ><img
-                src="{% static 'astronaut.png' %}"
-                alt="About"
-                height="100"
-                width="100"
-            /></a>
+
+          <div class="container">
+            <div class="row d-flex justify-content-center">
+              <div class="col-sm p-4">
+                <a href="{% url 'about' %}" class="p-4"
+                  ><img
+                    src="{% static 'astronaut.png' %}"
+                    alt="About"
+                    height="100"
+                    width="100"
+                /></a>
+                <br />
+                <a href="{% url 'about' %}" class="pl-4">About</a>
+              </div>
+              <div class="col-sm p-4">
+                <a href="{% url 'portfolio' %}" class="p-4"
+                  ><img
+                    src="{% static 'startup.png' %}"
+                    alt="About"
+                    height="100"
+                    width="100"
+                /></a>
+                <br />
+                <a href="{% url 'portfolio' %}">Projects</a>
+              </div>
+              <div class="col-sm p-4">
+                <a href="{% url 'allBlogs' %}" class="p-4"
+                  ><img
+                    src="{% static 'satellite-dish.png' %}"
+                    alt="About"
+                    height="100"
+                    width="100"
+                /></a>
+                <br />
+                <a href="{% url 'allBlogs' %}">Blog</a>
+              </div>
+            </div>
           </div>
-          <div class="row d-flex justify-content-center">
-            <a href="{% url 'portfolio' %}" class="p-4"
-              ><img
-                src="{% static 'startup.png' %}"
-                alt="About"
-                height="100"
-                width="100"
-            /></a>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <a href="{% url 'allBlogs' %}" class="p-4"
-              ><img
-                src="{% static 'satellite-dish.png' %}"
-                alt="About"
-                height="100"
-                width="100"
-            /></a>
-          </div>
-          <p class="lead text-muted pt-5">
+
+          <hr class="my-4" />
+          <h3 class="text-secondary pt-4">
             Everybody smiles in the same language!
-          </p>
+          </h3>
         </div>
       </section>
     </main>
