@@ -33,7 +33,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-          <a class="navbar-brand" href="{% url 'index' %}">
+          <a class="navbar-brand" href="{% url 'homepage' %}">
             <img
               class="d-inline-block align-top"
               src="{% static 'logoM.png' %}"
@@ -70,7 +70,9 @@
                 <input type="hidden" />
               </form>
               {% else %} -->
-              <a class="nav-item nav-link text-light" href="{% url 'index' %}"
+              <a
+                class="nav-item nav-link text-light"
+                href="{% url 'homepage' %}"
                 >Home</a
               >
               <a

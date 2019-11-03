@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Python applications with Djando - Dedicated Python Developer"
+    />
+    <title>Homepage | Carlos Mertens</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="/open-iconic/font/css/open-iconic-bootstrap.css"
+      rel="stylesheet"
+    />
+  </head>
+  {% extends 'base.html' %} {% load staticfiles %}
+  <body>
+    {% block content %}
+    <main role="main" class="pt-3">
+      <section
+        class="jumbotron text-center"
+        style="background-color:lightgray;"
+      >
+        <div class="container">
+          <h1 class="jumbotron-heading text-primary">
+            Hello there, I'm Carlos!
+          </h1>
+          <p class="lead text-muted">
+            Welcome to my website! I am glad you found me and I hope you like my
+            work.
+          </p>
+          <hr class="my-4" />
+          <p>
+            <a href="{% url 'allBlogs' %}" class="btn btn-primary my-2"
+              >Go to my Blog</a
+            >
+          </p>
+        </div>
+
+        <br />
+
+        <p class="lead text-muted pt-5">
+          Everybody smiles in the same language!
+        </p>
+      </section>
+    </main>
+
+    {% endblock %}
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  </body>
+</html>
