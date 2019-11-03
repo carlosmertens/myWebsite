@@ -31,25 +31,19 @@
       >
         <div class="container">
           <h1 class="jumbotron-heading text-primary">
-            Hello there, I'm Carlos!
+            Projects
           </h1>
           <p class="lead text-muted">
-            Welcome to my website! I am glad you found me and I hope you like my
-            work.
+            You just made my day by showing you are interested on my projects
+            and code.
           </p>
           <hr class="my-4" />
-          <p>
-            <a href="{% url 'allBlogs' %}" class="btn btn-primary my-2"
-              >Go to my Blog</a
-            >
-          </p>
         </div>
 
         <br />
 
         <div class="album py-5">
           <div class="container">
-            <h1 class="text-dark pb-5">Projects</h1>
             <div class="row">
               {% for project in projects.all %}
               <div class="col-md-4 pb-5">
@@ -87,10 +81,6 @@
             </div>
           </div>
         </div>
-
-        <p class="lead text-muted pt-5">
-          Everybody smiles in the same language!
-        </p>
       </section>
     </main>
 

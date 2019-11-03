@@ -38,18 +38,37 @@
             work.
           </p>
           <hr class="my-4" />
-          <p>
-            <a href="{% url 'allBlogs' %}" class="btn btn-primary my-2"
-              >Go to my Blog</a
-            >
+          <div class="row d-flex justify-content-center">
+            <a href="{% url 'about' %}" class="p-4"
+              ><img
+                src="{% static 'astronaut.png' %}"
+                alt="About"
+                height="100"
+                width="100"
+            /></a>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <a href="{% url 'portfolio' %}" class="p-4"
+              ><img
+                src="{% static 'startup.png' %}"
+                alt="About"
+                height="100"
+                width="100"
+            /></a>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <a href="{% url 'allBlogs' %}" class="p-4"
+              ><img
+                src="{% static 'satellite-dish.png' %}"
+                alt="About"
+                height="100"
+                width="100"
+            /></a>
+          </div>
+          <p class="lead text-muted pt-5">
+            Everybody smiles in the same language!
           </p>
         </div>
-
-        <br />
-
-        <p class="lead text-muted pt-5">
-          Everybody smiles in the same language!
-        </p>
       </section>
     </main>
 
