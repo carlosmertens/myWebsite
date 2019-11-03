@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Python applications with Djando - Dedicated Python Developer"
+    />
+    <title>About Me | Carlos Mertens</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  {% extends 'base.html' %} {% load staticfiles %}
+  <body>
+    {% block content %}
+    <main role="main" class="pt-5">
+      <section
+        class="jumbotron text-center"
+        style="background-color:lightgrey;"
+      >
+        <div class="container">
+          <h1 class="text-primary">
+            About Me!
+          </h1>
+
+          <p class="lead mt-4">
+            I am glad you have shown curiosity to get to know me!
+          </p>
+          <p class="lead">
+            I'm Certified in IT & Computing by The Open University and in
+            Machine Learning by Udacity. I also have a nanodegree in AI
+            (Artificial Intelligence) Programming with Python plus a Django Full
+            Stack Web Development certificate. I have a demonstrated history of
+            working in the internet industry and I am skilled in Customer
+            Satisfaction, Time Management, Problem Solving, and Teamwork.
+          </p>
+          <p class="lead">
+            I’m now at a point where I’m looking to make a transition in my
+            career. I’ve spent the last 5+ years working in a fast paced
+            e-commerce company within a team having a focus on service where
+            I’ve had the opportunity to coach others. I’ve trained over the last
+            4 years to prepare me for this career change, learning Programming
+            Principles, Python, NumPy and Pandas, Git and Command Line (Linux),
+            Machine Learning Algorithms and Statistical Data Analysis, basic
+            front-end technologies and Django back-end support. I have also
+            deploy my own website with Digital Ocean and in the process having
+            first hand experience with setting up a Linux server, Postgres,
+            Nginx and Gunicorn.
+          </p>
+          <hr class="my-4" />
+          <h1 class="text-primary">Connect with me!</h1>
+          <br />
+          <div class=" p-3">
+            <a
+              href="https://www.linkedin.com/in/carlosmertens/"
+              target="_blank"
+              class="p-4"
+              ><img
+                src="{% static 'linkedin.png' %}"
+                alt="LinkedIn"
+                height="100"
+                width="100"
+            /></a>
+
+            <a
+              href="https://github.com/carlosmertens"
+              target="_blank"
+              class="p-4"
+              ><img
+                src="{% static 'github-logo.png' %}"
+                alt="GitHub"
+                height="100"
+                width="100"
+            /></a>
+
+            <a href="mailto:mertenscarlos@yahoo.com" class="p-4"
+              ><img
+                src="{% static 'yahoo.png' %}"
+                alt="Email"
+                height="100"
+                width="100"
+            /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    {% endblock %}
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  </body>
+</html>

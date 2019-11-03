@@ -28,9 +28,7 @@
     />
   </head>
   {% load staticfiles %}
-  <body
-    style="font-family: 'Lato', sans-serif; background-color: cornflowerblue;"
-  >
+  <body style="font-family: 'Lato', sans-serif;">
     <!-- HEADER -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -42,7 +40,7 @@
               alt="Logo"
               height="40"
               width="40"
-            /><span class="pl-3"><strong>Carlos Mertens</strong></span>
+            /><span class="pl-3"><strong>CARLOS MERTENS</strong></span>
           </a>
           <button
             class="navbar-toggler"
@@ -80,7 +78,9 @@
                 href="{% url 'allBlogs' %}"
                 >Blog</a
               >
-              <a class="nav-item nav-link text-light" href="#">About</a>
+              <a class="nav-item nav-link text-light" href="{% url 'about' %}"
+                >About</a
+              >
               <!-- {% endif %} -->
             </div>
           </div>
