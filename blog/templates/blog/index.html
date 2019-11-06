@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     />
   </head>
-  {% extends 'base.html' %}
+  {% extends 'base.html' %} {% load staticfiles %}
   <body>
     {% block content %}
 
@@ -34,12 +34,6 @@
             articles, etc. <br />
             I hope you can take some positive or you can be guided to your next
             step to become a developer.
-          </p>
-          <hr class="my-4" />
-          <p>
-            <a href="{% url 'homepage' %}" class="btn btn-primary my-2"
-              >Back Home</a
-            >
           </p>
         </div>
 
@@ -70,6 +64,23 @@
           </p>
           <br />
           {% endfor %}
+        </div>
+
+        <div class="container">
+          <hr class="my-4" />
+          <div class="row d-flex justify-content-center">
+            <div class="col-sm p-4">
+              <a href="{% url 'homepage' %}" class="p-4"
+                ><img
+                  src="{% static 'control-center.png' %}"
+                  alt="About"
+                  height="100"
+                  width="100"
+              /></a>
+              <br />
+              <a href="{% url 'homepage' %}">Home</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
